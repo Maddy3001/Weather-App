@@ -18,12 +18,12 @@ button.addEventListener("click",()=>{
         var disc = data['weather']['0']['description']
         var tamp = data['main']['temp']
         var winds = data['wind']['speed']
-        cityname.innerHTML= `current city: ${citi}`
-        temperature.innerHTML=`current temperature: ${convert(tamp)}`
-        desc.innerHTML=`mood: ${disc}`
+        cityname.innerHTML= `Location: ${citi}`
+        temperature.innerHTML=`Temperature: ${convert(tamp)}`
+        desc.innerHTML=`Mood: ${disc}`
         wind.innerHTML=`current wind: ${winds}`
     })
     .catch(()=>{
-        alert("chutiya galat daala hai")
+        alert("Invalid Input")
     })
 })
